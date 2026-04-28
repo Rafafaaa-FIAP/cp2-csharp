@@ -58,10 +58,10 @@ namespace GameStoreMVC.Repositorio
         {
             using var conn = new MySqlConnection(_connectionString);
             conn.Open();
-            var cmd = new MySqlCommand("INSERT INTO Usuario (Nome,Email,Senha) VALUES(@nome, @Email, @Senha)", conn);
+            var cmd = new MySqlCommand("INSERT INTO Usuarios (Nome,Email,Senha) VALUES(@nome, @email, @senha)", conn);
             cmd.Parameters.AddWithValue("@nome", usuario.Nome);
-            cmd.Parameters.AddWithValue("@Email", usuario.Email);
-            cmd.Parameters.AddWithValue("@Senha", usuario.Senha);
+            cmd.Parameters.AddWithValue("@email", usuario.Email);
+            cmd.Parameters.AddWithValue("@senha", usuario.Senha);
             cmd.ExecuteNonQuery();
         }
 

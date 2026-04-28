@@ -55,6 +55,22 @@ namespace GameStoreMVC.Controllers
             return View();
         }
 
+        [HttpPost]
+        public IActionResult CriarConta(UsuarioViewModel usumodel)
+        {
+            if (!ModelState.IsValid) return View(usumodel);
+
+            var usuario = new UsuarioViewModel
+            {
+                Nome = usumodel.Nome,
+                Email = usumodel.Email,
+                Senha = usumodel.Senha,
+            };
+
+            _usuarioRepositorio.CriarConta(usuario);
+            return RedirectToAction(nameof(Index));
+        }
+
         public async Task<IActionResult> Logout()
         {
             await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
