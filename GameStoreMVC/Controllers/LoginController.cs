@@ -48,7 +48,13 @@ namespace GameStoreMVC.Controllers
             return View();
         }
 
-       
+
+        [HttpGet]
+        public IActionResult CriarConta()
+        {
+            return View();
+        }
+
         public async Task<IActionResult> Logout()
         {
             await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);

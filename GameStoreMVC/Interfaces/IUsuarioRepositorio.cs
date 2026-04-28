@@ -6,6 +6,6 @@ namespace GameStoreMVC.Interfaces
     {
         Usuario ValidarLogin(string email, string senha);
 
-     
+        void CriarConta(UsuarioViewModel usuario);
     }
 }

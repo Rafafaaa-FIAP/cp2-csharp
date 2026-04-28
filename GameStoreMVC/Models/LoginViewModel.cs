@@ -1,4 +1,6 @@
-﻿namespace GameStoreMVC.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace GameStoreMVC.Models
 {
     // Usado pelo Repositório para representar o Banco
     public class Usuario
