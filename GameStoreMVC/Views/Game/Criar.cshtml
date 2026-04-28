@@ -1,1 +1,56 @@
-﻿
+﻿@model GameStoreMVC.Models.Game
+
+@{
+    ViewData["Title"] = Model.Id == 0 ? "Cadastrar Jogo" : "Editar Jogo";
+    var action = Model.Id == 0 ? "CadastrarJogo" : "EditarJogo";
+}
+
+<div class="container d-flex justify-content-center align-items-center min-vh-100">
+    <div class="card shadow-lg border-0 p-4" style="width: 100%; max-width: 500px; border-radius: 18px;">
+
+        <div class="text-center mb-4">
+            <h2 class="fw-bold">
+                @(Model.Id == 0 ? "Cadastrar Jogo" : "Editar Jogo")
+            </h2>
+            <p class="text-muted mb-0">
+                @(Model.Id == 0 ? "Adicione um novo jogo" : "Atualize as informações do jogo")
+            </p>
+        </div>
+
+        <form asp-action="@action" method="post">
+            @Html.AntiForgeryToken()
+
+            <input type="hidden" asp-for="Id" />
+
+            <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+            <div class="form-floating mb-3">
+                <input asp-for="Nome" class="form-control" placeholder="Nome do jogo" />
+                <label asp-for="Nome">Nome</label>
+                <span asp-validation-for="Nome" class="text-danger small"></span>
+            </div>
+
+            <div class="form-floating mb-3">
+                <input asp-for="Descricao" class="form-control" placeholder="Descrição" />
+                <label asp-for="Descricao">Descrição</label>
+                <span asp-validation-for="Descricao" class="text-danger small"></span>
+            </div>
+
+            <div class="form-floating mb-4">
+                <input asp-for="Dificuldade" class="form-control" placeholder="Dificuldade" />
+                <label asp-for="Dificuldade">Dificuldade</label>
+                <span asp-validation-for="Dificuldade" class="text-danger small"></span>
+            </div>
+
+            <div class="d-grid gap-2">
+                <button type="submit" class="btn btn-primary btn-lg">
+                    @(Model.Id == 0 ? "Cadastrar" : "Salvar Alterações")
+                </button>
+
+                <a asp-action="Index" class="btn btn-outline-secondary">
+                    Voltar
+                </a>
+            </div>
+        </form>
+    </div>
+</div>

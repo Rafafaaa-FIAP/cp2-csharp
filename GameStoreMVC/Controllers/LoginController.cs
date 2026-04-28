@@ -68,7 +68,7 @@ namespace GameStoreMVC.Controllers
             };
 
             _usuarioRepositorio.CriarConta(usuario);
-            return RedirectToAction(nameof(Index));
+            return RedirectToAction("Index", "Home");
         }
 
         public async Task<IActionResult> Logout()

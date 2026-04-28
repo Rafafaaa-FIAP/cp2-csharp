@@ -21,7 +21,7 @@ namespace GameStoreMVC.Repositorio
             conn.Open();
             var cmd = new MySqlCommand("INSERT INTO Games (Nome,Descricao,Dificuldade) VALUES(@nome, @descricao, @dificuldade)", conn);
             cmd.Parameters.AddWithValue("@nome", jogo.Nome);
-            cmd.Parameters.AddWithValue("@telefone", jogo.Descricao);
+            cmd.Parameters.AddWithValue("@descricao", jogo.Descricao);
             cmd.Parameters.AddWithValue("@dificuldade", jogo.Dificuldade);
             cmd.ExecuteNonQuery();
         }
@@ -80,7 +80,7 @@ namespace GameStoreMVC.Repositorio
         {
             using var conn = new MySqlConnection(_connectionString);
             conn.Open();
-            var cmd = new MySqlCommand("UPDATE Gsames SET Nome = @nome, Descricao = @descricao,Dificuldade = @dificuldade WHERE Id= @id", conn);
+            var cmd = new MySqlCommand("UPDATE Games SET Nome = @nome, Descricao = @descricao,Dificuldade = @dificuldade WHERE Id= @id", conn);
             cmd.Parameters.AddWithValue("@nome", prodmodel.Nome);
             cmd.Parameters.AddWithValue("@descricao", prodmodel.Descricao);
             cmd.Parameters.AddWithValue("@dificuldade", prodmodel.Dificuldade);
