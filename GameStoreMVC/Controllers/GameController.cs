@@ -8,8 +8,9 @@ namespace GameStoreMVC.Controllers
 {
     public class GameController : Controller
     {
-        private readonly GameRepositorio _gameRepositorio;
-        public GameController(GameRepositorio gameRepositorio)
+        private readonly IGameRepositorio _gameRepositorio;
+
+        public GameController(IGameRepositorio gameRepositorio)
         {
             _gameRepositorio = gameRepositorio;
         }
@@ -23,7 +24,7 @@ namespace GameStoreMVC.Controllers
         [HttpGet]
         public IActionResult CadastrarJogo()
         {
-            return View();
+            return View("Criar", new Game());
         }
 
 
@@ -61,7 +62,8 @@ namespace GameStoreMVC.Controllers
                 Dificuldade = jogo.Dificuldade,
             };
         
-            return View(viewModel);
+
+            return View("Criar", viewModel);
         }
 
         [HttpPost]
