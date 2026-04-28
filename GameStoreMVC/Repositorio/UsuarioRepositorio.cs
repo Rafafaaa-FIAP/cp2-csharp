@@ -54,6 +54,17 @@ namespace GameStoreMVC.Repositorio
             return null!; // E-mail não encontrado ou senha não confere
         }
 
+        public void CriarConta(UsuarioViewModel usuario)
+        {
+            using var conn = new MySqlConnection(_connectionString);
+            conn.Open();
+            var cmd = new MySqlCommand("INSERT INTO Usuario (Nome,Email,Senha) VALUES(@nome, @Email, @Senha)", conn);
+            cmd.Parameters.AddWithValue("@nome", usuario.Nome);
+            cmd.Parameters.AddWithValue("@Email", usuario.Email);
+            cmd.Parameters.AddWithValue("@Senha", usuario.Senha);
+            cmd.ExecuteNonQuery();
+        }
+
 
     }
 }
