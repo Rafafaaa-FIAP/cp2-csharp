@@ -1,25 +1,25 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\labsfiap\\Desktop\\GameStore\\",
+  "WorkspaceRootPath": "C:\\Users\\labsfiap\\Desktop\\cp2-csharp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{353CF31B-45B8-484E-AD6F-BDA7C535F8DC}|GameStoreMVC\\GameStoreMVC.csproj|c:\\users\\labsfiap\\desktop\\gamestore\\gamestoremvc\\interfaces\\iusuariorepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{353CF31B-45B8-484E-AD6F-BDA7C535F8DC}|GameStoreMVC\\GameStoreMVC.csproj|solutionrelative:gamestoremvc\\interfaces\\iusuariorepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{353CF31B-45B8-484E-AD6F-BDA7C535F8DC}|GameStoreMVC\\GameStoreMVC.csproj|c:\\users\\labsfiap\\desktop\\gamestore\\gamestoremvc\\views\\login\\criarconta.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{353CF31B-45B8-484E-AD6F-BDA7C535F8DC}|GameStoreMVC\\GameStoreMVC.csproj|c:\\users\\labsfiap\\desktop\\cp2-csharp\\gamestoremvc\\views\\login\\criarconta.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{353CF31B-45B8-484E-AD6F-BDA7C535F8DC}|GameStoreMVC\\GameStoreMVC.csproj|solutionrelative:gamestoremvc\\views\\login\\criarconta.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{353CF31B-45B8-484E-AD6F-BDA7C535F8DC}|GameStoreMVC\\GameStoreMVC.csproj|c:\\users\\labsfiap\\desktop\\gamestore\\gamestoremvc\\repositorio\\usuariorepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{353CF31B-45B8-484E-AD6F-BDA7C535F8DC}|GameStoreMVC\\GameStoreMVC.csproj|c:\\users\\labsfiap\\desktop\\cp2-csharp\\gamestoremvc\\interfaces\\iusuariorepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{353CF31B-45B8-484E-AD6F-BDA7C535F8DC}|GameStoreMVC\\GameStoreMVC.csproj|solutionrelative:gamestoremvc\\interfaces\\iusuariorepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{353CF31B-45B8-484E-AD6F-BDA7C535F8DC}|GameStoreMVC\\GameStoreMVC.csproj|c:\\users\\labsfiap\\desktop\\cp2-csharp\\gamestoremvc\\repositorio\\usuariorepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{353CF31B-45B8-484E-AD6F-BDA7C535F8DC}|GameStoreMVC\\GameStoreMVC.csproj|solutionrelative:gamestoremvc\\repositorio\\usuariorepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{353CF31B-45B8-484E-AD6F-BDA7C535F8DC}|GameStoreMVC\\GameStoreMVC.csproj|c:\\users\\labsfiap\\desktop\\gamestore\\gamestoremvc\\models\\usuarioviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{353CF31B-45B8-484E-AD6F-BDA7C535F8DC}|GameStoreMVC\\GameStoreMVC.csproj|c:\\users\\labsfiap\\desktop\\cp2-csharp\\gamestoremvc\\models\\usuarioviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{353CF31B-45B8-484E-AD6F-BDA7C535F8DC}|GameStoreMVC\\GameStoreMVC.csproj|solutionrelative:gamestoremvc\\models\\usuarioviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{353CF31B-45B8-484E-AD6F-BDA7C535F8DC}|GameStoreMVC\\GameStoreMVC.csproj|c:\\users\\labsfiap\\desktop\\gamestore\\gamestoremvc\\views\\login\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{353CF31B-45B8-484E-AD6F-BDA7C535F8DC}|GameStoreMVC\\GameStoreMVC.csproj|c:\\users\\labsfiap\\desktop\\cp2-csharp\\gamestoremvc\\views\\login\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{353CF31B-45B8-484E-AD6F-BDA7C535F8DC}|GameStoreMVC\\GameStoreMVC.csproj|solutionrelative:gamestoremvc\\views\\login\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
@@ -30,28 +30,27 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "UsuarioViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\labsfiap\\Desktop\\GameStore\\GameStoreMVC\\Models\\UsuarioViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\labsfiap\\Desktop\\cp2-csharp\\GameStoreMVC\\Models\\UsuarioViewModel.cs",
               "RelativeDocumentMoniker": "GameStoreMVC\\Models\\UsuarioViewModel.cs",
-              "ToolTip": "C:\\Users\\labsfiap\\Desktop\\GameStore\\GameStoreMVC\\Models\\UsuarioViewModel.cs",
+              "ToolTip": "C:\\Users\\labsfiap\\Desktop\\cp2-csharp\\GameStoreMVC\\Models\\UsuarioViewModel.cs",
               "RelativeToolTip": "GameStoreMVC\\Models\\UsuarioViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-28T00:51:07.337Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-28T00:51:07.337Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "IUsuarioRepositorio.cs",
-              "DocumentMoniker": "C:\\Users\\labsfiap\\Desktop\\GameStore\\GameStoreMVC\\Interfaces\\IUsuarioRepositorio.cs",
+              "DocumentMoniker": "C:\\Users\\labsfiap\\Desktop\\cp2-csharp\\GameStoreMVC\\Interfaces\\IUsuarioRepositorio.cs",
               "RelativeDocumentMoniker": "GameStoreMVC\\Interfaces\\IUsuarioRepositorio.cs",
-              "ToolTip": "C:\\Users\\labsfiap\\Desktop\\GameStore\\GameStoreMVC\\Interfaces\\IUsuarioRepositorio.cs",
+              "ToolTip": "C:\\Users\\labsfiap\\Desktop\\cp2-csharp\\GameStoreMVC\\Interfaces\\IUsuarioRepositorio.cs",
               "RelativeToolTip": "GameStoreMVC\\Interfaces\\IUsuarioRepositorio.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -62,37 +61,35 @@
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "UsuarioRepositorio.cs",
-              "DocumentMoniker": "C:\\Users\\labsfiap\\Desktop\\GameStore\\GameStoreMVC\\Repositorio\\UsuarioRepositorio.cs",
+              "DocumentMoniker": "C:\\Users\\labsfiap\\Desktop\\cp2-csharp\\GameStoreMVC\\Repositorio\\UsuarioRepositorio.cs",
               "RelativeDocumentMoniker": "GameStoreMVC\\Repositorio\\UsuarioRepositorio.cs",
-              "ToolTip": "C:\\Users\\labsfiap\\Desktop\\GameStore\\GameStoreMVC\\Repositorio\\UsuarioRepositorio.cs",
+              "ToolTip": "C:\\Users\\labsfiap\\Desktop\\cp2-csharp\\GameStoreMVC\\Repositorio\\UsuarioRepositorio.cs",
               "RelativeToolTip": "GameStoreMVC\\Repositorio\\UsuarioRepositorio.cs",
               "ViewState": "AgIAACoAAAAAAAAAAAAowDcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-28T00:45:12.049Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-28T00:45:12.049Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "Login.cshtml",
-              "DocumentMoniker": "C:\\Users\\labsfiap\\Desktop\\GameStore\\GameStoreMVC\\Views\\Login\\Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\labsfiap\\Desktop\\cp2-csharp\\GameStoreMVC\\Views\\Login\\Login.cshtml",
               "RelativeDocumentMoniker": "GameStoreMVC\\Views\\Login\\Login.cshtml",
-              "ToolTip": "C:\\Users\\labsfiap\\Desktop\\GameStore\\GameStoreMVC\\Views\\Login\\Login.cshtml",
+              "ToolTip": "C:\\Users\\labsfiap\\Desktop\\cp2-csharp\\GameStoreMVC\\Views\\Login\\Login.cshtml",
               "RelativeToolTip": "GameStoreMVC\\Views\\Login\\Login.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-04-28T00:40:55.97Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-28T00:40:55.97Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "CriarConta.cshtml",
-              "DocumentMoniker": "C:\\Users\\labsfiap\\Desktop\\GameStore\\GameStoreMVC\\Views\\Login\\CriarConta.cshtml",
+              "DocumentMoniker": "C:\\Users\\labsfiap\\Desktop\\cp2-csharp\\GameStoreMVC\\Views\\Login\\CriarConta.cshtml",
               "RelativeDocumentMoniker": "GameStoreMVC\\Views\\Login\\CriarConta.cshtml",
-              "ToolTip": "C:\\Users\\labsfiap\\Desktop\\GameStore\\GameStoreMVC\\Views\\Login\\CriarConta.cshtml",
+              "ToolTip": "C:\\Users\\labsfiap\\Desktop\\cp2-csharp\\GameStoreMVC\\Views\\Login\\CriarConta.cshtml",
               "RelativeToolTip": "GameStoreMVC\\Views\\Login\\CriarConta.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAwAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-04-28T00:31:41.639Z",
               "EditorCaption": ""
