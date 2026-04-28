@@ -2,7 +2,7 @@
 using GameStoreMVC.Models;
 using MySql.Data.MySqlClient;
 using Org.BouncyCastle.Crypto.Generators;
-using BCrypt.Net; // Importante para a criptografia
+using BCrypt.Net;
 
 namespace GameStoreMVC.Repositorio
 {
@@ -37,6 +37,9 @@ namespace GameStoreMVC.Repositorio
                         //Pegamos o Hash que está guardado no banco
                         string senhaDoBanco = reader["Senha"].ToString()!;
 
+                        Console.Write(reader["Senha"].ToString());
+                        Console.Write(BCrypt.Net.BCrypt.Verify(senha, senhaDoBanco));
+
                         // O Verify faz a mágica: compara a senha limpa com o Hash
                         // O BCrypt pega a 'senha' que veio do teclado e valida contra o 'senhaDoBanco' (hash)
                         if (BCrypt.Net.BCrypt.Verify(senha, senhaDoBanco))
@@ -58,10 +61,11 @@ namespace GameStoreMVC.Repositorio
         {
             using var conn = new MySqlConnection(_connectionString);
             conn.Open();
-            var cmd = new MySqlCommand("INSERT INTO Usuarios (Nome,Email,Senha) VALUES(@nome, @email, @senha)", conn);
+            var cmd = new MySqlCommand("INSERT INTO Usuarios (Nome,Email,Senha,Cargo) VALUES(@nome, @email, @senha, @cargo)", conn);
             cmd.Parameters.AddWithValue("@nome", usuario.Nome);
             cmd.Parameters.AddWithValue("@email", usuario.Email);
-            cmd.Parameters.AddWithValue("@senha", usuario.Senha);
+            cmd.Parameters.AddWithValue("@senha", BCrypt.Net.BCrypt.HashPassword(usuario.Senha));
+            cmd.Parameters.AddWithValue("@cargo", "Comum");
             cmd.ExecuteNonQuery();
         }
 

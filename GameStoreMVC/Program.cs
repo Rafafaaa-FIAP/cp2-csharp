@@ -1,5 +1,6 @@
 using GameStoreMVC.Interfaces;
 using GameStoreMVC.Repositorio;
+using Microsoft.AspNetCore.Authentication.Cookies;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,8 +12,17 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddScoped<IUsuarioRepositorio, UsuarioRepositorio>();
 builder.Services.AddScoped<IGameRepositorio, GameRepositorio>();
 
+builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+    .AddCookie(options =>
+    {
+        options.LoginPath = "/Login"; // ajuste se necessário
+        options.AccessDeniedPath = "/AcessoNegado";
+    });
 
 var app = builder.Build();
+
+app.UseAuthentication();
+app.UseAuthorization();
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
@@ -22,9 +32,6 @@ if (!app.Environment.IsDevelopment())
 app.UseStaticFiles();
 
 app.UseRouting();
-
-
-app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
